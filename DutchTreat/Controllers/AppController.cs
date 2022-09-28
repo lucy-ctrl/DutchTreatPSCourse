@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DutchTreat.ViewModels;
+using Microsoft.AspNetCore.Mvc;
 
 namespace DutchTreat.Controllers
 {
@@ -7,8 +8,37 @@ namespace DutchTreat.Controllers
 
         public IActionResult Index()
         {
-            throw new InvalidProgramException("bad things happen to good devs");
+            
             return View(); //represents RAZER 
         }
+
+        [HttpGet("contact")]
+        public IActionResult Contact()
+        {
+            
+            
+            return View();
+        }
+
+        [HttpPost("contact")]
+        public IActionResult Contact(ContactViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                
+            }
+            else
+            {
+
+            }
+            return View();
+        }
+
+        [HttpGet("about")]
+        public IActionResult About()
+        {
+            return View();
+        }
     }
+
 }
