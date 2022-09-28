@@ -1,0 +1,65 @@
+﻿body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type=submit] {
+    width: auto;
+}
+input,textarea{
+    font-size:18px;
+    width:200px;
+}
+label{
+    font-size:16px;
+}
+#theForm{
+    background-color:aliceblue;
+}
+    #theForm input[type=submit]{
+    background-color:hotpink;
+    color:white;
+    }
+
+ul.productProps{
+    font-size:small;
+}
+
+    ul.productProps li{
+    list-style-type: none;
+    }
+.productInfo{
+    border: 1px solid grey;
+    display: inline-block;
+    padding: 8px 2px;
+    margin: 2px;
+    width: 450px;
+    background-color:aliceblue;
+    border-radius:5px;
+
+}
+    .productInfo img{
+        margin:3px;
+        float: left;
+        border: 1px solid black;
+        max-width: 150px;
+    }
+
+#loginToggle{
+    cursor:pointer;
+}
+
+.popupForm {
+    padding: 5px;
+    border: 2px black outset;
+    display: inline-block;
+}
+    .popupForm input{
+        width:200px;
+    }
+    .popupForm label{
+        width:150px;
+        display: inline-block;
+    }
+    .popupForm input[type=checkbox], .popupForm input[type=submit]{
+        width:auto;
+    }
