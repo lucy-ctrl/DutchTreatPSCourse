@@ -1,4 +1,17 @@
-﻿body {
+﻿
+header{
+    background-color:aliceblue;
+}
+
+
+
+
+
+
+
+
+/**
+body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -74,3 +87,4 @@ menu li{
     menu li::last-of-type::after{
         content: ' '
     }
+    */

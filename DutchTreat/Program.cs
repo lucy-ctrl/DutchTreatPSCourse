@@ -1,7 +1,10 @@
+using DutchTreat.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+builder.Services.AddTransient<IMailService,NullMailService>(); //service we're gonna inject and the class(type) which implements this for me
 //builder.Services.AddRunTimeCompilation();
 
 var app = builder.Build();
